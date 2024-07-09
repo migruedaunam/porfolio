@@ -57,15 +57,17 @@ body{
 
 .presentacion__enlaces__link{
     width: 378px;
-    //background-color: #22d4fd;
     text-align: center;
-    padding: 21.5px 0;
     border-radius: 8px;
-    font-family: "Montserrat", sans-serif;
-    font-size: 24px;
-    font-weight: 600;
+	font-size: 24px;
+	font-weight: 600;
+	padding: 21.5px 0;
     text-decoration: none;
     color: #f6f6f6;
-	border: 2px solid #22D4FD;	
+	font-family: "Montserrat", sans-serif;
+	border: 2px solid #22D4FD;
+	display: flex;
+	justify-content: center;
+	gap: 10px;	
 }
 

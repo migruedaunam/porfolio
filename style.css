@@ -71,3 +71,10 @@ body{
 	gap: 10px;	
 }
 
+.presentacion__enlaces__link:hover{
+	background-color: #272727;
+}
+.name:hover{
+	color:red;
+	font-size: 50px;
+}

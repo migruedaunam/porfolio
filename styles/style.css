@@ -17,6 +17,8 @@ body{
 }
 
 .header__menu{
+	display: flex;
+	gap: 80px;
 
 }
 
@@ -25,13 +27,14 @@ body{
 	font-size: 24px;
 	font-weight: 600;
 	color: #22D4FD;
+	text-decoration: none;
 
 }
 
 .presentacion{
 	display: flex;
 	align-items: center;
-	margin: 10% 15%;
+	padding: 7% 15%;
 	justify-content: space-between;
 
 }
@@ -102,4 +105,9 @@ body{
 	font-family: "Montserrat", sans-serif;
 	font-size: 24px;
 	font-weight: 400;
+}
+
+.presentacion__contenido__texto a{
+    text-decoration: none;
+    color: #22D4FD;
 }

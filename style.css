@@ -6,14 +6,26 @@
 }
 
 body{
-    	background-color: #000000;
+    background-color: #000000;
 	color: #f6f6f6f6;
-	height: 100vh;
-    	box-sizing: border-box;
+	box-sizing: border-box;
 }
 
-.titulo-destaque{
-        color: #22d4fd;
+.header{
+	padding: 2% 0% 0% 15%;
+
+}
+
+.header__menu{
+
+}
+
+.header__menu__link{
+	font-family: "Montserrat", sans-serif;
+	font-size: 24px;
+	font-weight: 600;
+	color: #22D4FD;
+
 }
 
 .presentacion{
@@ -34,6 +46,10 @@ body{
 .presentacion__contenido__titulo{
 	ont-size: 36px;
 	font-family: "Krona One", sans-serif;
+}
+
+.titulo-destaque{
+	color: #22d4fd;
 }
 
 .presentacion__contenido__texto{

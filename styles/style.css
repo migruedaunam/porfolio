@@ -57,7 +57,7 @@ body{
 }
 
 .presentacion__contenido__titulo{
-	ont-size: 36px;
+	font-size: 36px;
 	font-family: var(--fuente--krona);
 }
 

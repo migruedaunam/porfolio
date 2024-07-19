@@ -1,13 +1,13 @@
 @import url('https://fonts.googleapis.com/css2?family=Krona+One&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
 :root{
-	--color--primario: #000000;
-	--color--secundario: #f6f6f6f6;
+	--color--primario: #E5E5E5;
+	--color--secundario: #000000;
 	--color--terceario: #22D4FD;
 	--color--hover: #272727;
 
 
-	--fuente--montserrat: "Montserrat", sans-serif;
+	--fuente--inter: "Inter", sans-serif;
 	--fuente--krona: "Krona One", sans-serif;
 }
 
@@ -22,7 +22,7 @@ body{
 	box-sizing: border-box;
 }
 
-
+/*
 .header{
 	padding: 2% 0% 0% 15%;
 
@@ -40,7 +40,7 @@ body{
 	color: var(--color--terceario);
 	text-decoration: none;
 }
-
+*/
 .presentacion{
 	display: flex;
 	align-items: center;
@@ -57,10 +57,10 @@ body{
 }
 
 .presentacion__contenido__titulo{
-	font-size: 2.25rem;
-	font-family: var(--fuente--krona);
+	font-size: 2rem;
+	font-family: var(--fuente--inter);
 }
-
+/*
 .titulo-destaque{
         color: var(--color--terceario);
 }
@@ -69,19 +69,19 @@ body{
     font-family: var(--fuente--montserrat);
     font-size: 1.5rem;
 }
-
+*/
 .presentacion__enlaces{
     display: flex;
     justify-content: space-between;
-    flex-direction: column;
+    flex-direction: row;
     align-items: center;
     gap: 32px;
 }
 
 
 .presentacion__enlaces__subtitulo{
-	font-family: var(--fuente--krona);
-	font-size: 1.5rem;
+	font-family: var(--fuente--inter);
+	font-size: .8rem;
 	font-weight: 400;
 }
 
@@ -103,9 +103,17 @@ body{
 	background-color: var(--color--hover);
 }
 
-.presentacion__imagen{
-	width: 50%;
+.encriptado{
+	width: 400px;
+	font-family: var(--fuente--inter);
+	text-align: center;
+	font-size: 2rem;
 }
+
+.presentacion__imagen{
+	width: 100%;
+}
+/*
 .footer{
 	background-color:var(--color--terceario);
 	padding: 24px;
@@ -116,13 +124,16 @@ body{
 	font-weight: 400;
 }
 
+
 .presentacion__contenido__texto a{
     text-decoration: none;
     color: var(--color--terceario);
 }
+*/
 
 @media (max-width: 1200px) {
 
+	/*
 	.header{
 		padding: 10%;
 	}
@@ -130,7 +141,7 @@ body{
 	.header__menu{
 		justify-content: center;
 	}
-
+*/
 	.presentacion{
 		flex-direction: column-reverse;
 		padding: 5%;

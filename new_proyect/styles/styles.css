@@ -8,15 +8,16 @@
 body{
     background-color: #F3F5FC;
     box-sizing: border-box;
-    height: 100vh;
+    
 }
 
 .flex__container{
     display: flex;
+    height: 100vh;
     /*margin: 168px 72px 0 240px;*/
     align-items: center;
-	/*justify-content: center;
-	gap: 100px;
+	justify-content: center;
+	gap: 112px;
 */
 }
 
@@ -74,6 +75,16 @@ button{
     font-family: var(--fuente--inter);
     font-size: 16px;
        
+}
+.encriptar{
+    background-color: #0A3871;
+    color: #ffffff;
+
+}
+
+.desencriptar{
+    background-color: #D8DFE8;
+    color: #0A3871;
 }
 .info_text_1{
     font-family: var(--fuente--inter);

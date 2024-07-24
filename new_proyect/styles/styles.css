@@ -14,7 +14,6 @@ body{
 .flex__container{
     display: flex;
     height: 100vh;
-    /*margin: 168px 72px 0 240px;*/
     align-items: center;
 	justify-content: center;
 	gap: 112px;
@@ -24,7 +23,7 @@ body{
 .caja1{
     display: flex;
     flex-direction: column;   
-    gap: 635px;
+    gap: 500px;
 }
 
 .texto{
@@ -71,10 +70,10 @@ body{
 button{
     height: 67px;
     width: 328px;
+    border: 3px solid black;
     border-radius: 24px;
     font-family: var(--fuente--inter);
     font-size: 16px;
-       
 }
 .encriptar{
     background-color: #0A3871;

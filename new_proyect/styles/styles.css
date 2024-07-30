@@ -17,22 +17,41 @@ body{
     align-items: center;
 	justify-content: center;
 	gap: 112px;
-*/
+
 }
 
 .caja1{
     display: flex;
     flex-direction: column;   
-    gap: 500px;
+    gap: 50px;
 }
 
-.texto{
+.text-input{
+    height: 500px;
     font-family: var(--fuente--inter);
     font-style: normal;
     font-size: 32px;
     color: darkblue;
+    border: 0;
+}
+.action_advertencia{
+    font-family: var(--fuente--inter);
+    font-style: normal;
+    font-size: 12px;
+    color: #495057;
 }
 
+.action{
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.action_botones{
+    display: flex;
+    gap: 24px;
+}
+/* *************************************** */
 .caja2{
     display: flex;
     flex-direction: column;
@@ -49,22 +68,6 @@ body{
     flex-direction: column;
     width: 336px;
     gap: 16px;
-}
-.action_advertencia{
-    font-family: var(--fuente--inter);
-    font-style: normal;
-    font-size: 12px;
-    color: #495057;
-}
-.action{
-    display: flex;
-    flex-direction: column;
-    gap: 16px;
-}
-
-.action_botones{
-    display: flex;
-    gap: 24px;
 }
 
 button{
@@ -98,4 +101,23 @@ button{
     font-size: 16px;
     text-align: center;
     color: #495057;
+}
+
+.msg.box {
+    display: flex;
+    flex-direction: column;
+    width: 336px;
+    gap: 16px;
+}
+.text-input-salida{
+    height: 555px;
+    font-family: var(--fuente--inter);
+    font-style: normal;
+    font-size: 32px;
+    color: darkblue;
+    border: 0;
+}
+.btn{
+    background-color: #D8DFE8;
+    color: #0A3871; 
 }

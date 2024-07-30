@@ -10,28 +10,33 @@
 <body>
     <main class="flex__container">
         <section class="caja1">
-            <p class="texto"></p>
-
-            <div class="action">
-
-                <p class="action_advertencia">Solo letras minusculas y sin acentos</p>
-
-                <div class="action_botones">
-                    <button onclick="funcion1();" class="encriptar">Encriptar</button>
-                    <button onclick="funcion2();" class="desencriptar">Desencriptar</button>
+            <form action="" onsubmit="return false;">
+                <textarea class="text-input" name="input-texto" id="input-texto" placeholder="Ingrese el texto aquí"></textarea>
+                <div class="action">
+                    <p class="action_advertencia">Solo letras minusculas y sin acentos</p>
+                    <div class="action_botones">
+                        <button class="encriptar" type="button" id="btn-encriptar">Encriptar!</button>
+                        <button class="desencriptar" type="button" id="btn-desencriptar">Desencriptar!</button>
+                    </div>
                 </div>
-            </div>
-
+            </form>
         </section>
 
         <section class="caja2">
-            <img class="presentacion__imagen" src="./assets/secret.jpg" alt="Foto de ejemplo">
-            <div class="info">
-                <P class="info_text_1">Ningún mensaje fue encontrado</P>
-                <P class="info_text_2">Ingresa el texto que desees encriptar o desencriptar.</P>
+
+            <div class="msg box" style="display: none;">
+                <textarea class="text-input-salida" id="msg" readonly></textarea>
+                <button class="btn" type="button" id="btn-copy">Copiar</button>    
             </div>
             
+            <div class="info">
 
+                <img class="presentacion__imagen" id="imagen" src="./assets/secret.jpg" alt="Foto de ejemplo">
+                <P class="info_text_1">Ningún mensaje fue encontrado</P>
+                <P class="info_text_2">Ingresa el texto que desees encriptar o desencriptar.</P>
+            
+            </div>
+            
         </section>
 
     </main>

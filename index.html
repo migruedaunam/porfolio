@@ -1,40 +1,29 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href= "./styles/style.css">
+    <title>Mostrar Botón Oculto</title>
 </head>
 <body>
+    <!-- Botón visible que al presionarse mostrará el botón oculto -->
+    <button onclick="mostrarBoton()">Mostrar Botón Oculto</button>
+    
+    <!-- Botón oculto que se mostrará al presionar el botón anterior -->
+    <button onclick="funcion3();" class="copiar" style="display:none;" id="boton_oculto">Copiar</button>
 
-    <main class="contenedor"> <!--presentacion -->
-
-        <section class="contenedero_sec1"> <!--presentacion__contenido-->
-
-            <p class="texto"> <!--presentacion__contenido__titulo -->
-                Ingrese el texto aqui </p>
-
-            <div class="presentacion__enlaces">
-                <p class="presentacion__enlaces__subtitulo">Solo letras minusculas y sin acentos:</p>
-                <div class="botones">
-                    <button class="presentacion__enlaces__link" href="https://www.instagram.com/">
-                    Encriptar</button>
-                    <button class="presentacion__enlaces__link" href="https://github.com/">
-                    Desencriptar</button>
-                </div>
-            </div>
-
-        </section>
-
-        <section class="contenedero_sec2"> <!--encriptado-->
-            <img class="presentacion__imagen" src="./assets/secret.jpg" alt="Foto de ejemplo"> 
-            <p>Ingrese el texto aqui </p>
-            <p>Ingrese el texto aqui </p>
-
-        </section>
-
-    </main>
-
+    <script>
+        function mostrarBoton() {
+            // Obtiene el botón oculto por su id
+            var botonOculto = document.getElementById('boton_oculto');
+            // Cambia el estilo del botón para hacerlo visible
+            botonOculto.style.display = 'inline-block';
+        }
+        
+        function funcion3() {
+            // Aquí puedes poner la funcionalidad de tu botón oculto
+            alert('¡Botón oculto presionado!');
+        }
+    </script>
 </body>
 </html>

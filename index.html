@@ -1,33 +1,29 @@
 <!DOCTYPE html>
-<html lang="es-mx">
+<html lang="es">
 <head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
-  <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mostrar Botón Oculto</title>
 </head>
 <body>
+    <!-- Botón visible que al presionarse mostrará el botón oculto -->
+    <button onclick="mostrarBoton()">Mostrar Botón Oculto</button>
     
-  <h1 class="titulo">Código Secreto</h1>
+    <!-- Botón oculto que se mostrará al presionar el botón anterior -->
+    <button onclick="funcion3();" class="copiar" style="display:none;" id="boton_oculto">Copiar</button>
 
-  <main class="main">
-    <section class="form box">
-      <form action="" onsubmit="return false;">
-        <label for="input-texto">Solo letras minúsculas, sin acento</label>
-        <textarea class="text-input" name="input-texto" id="input-texto" placeholder="Ingrese el texto aquí"></textarea>
-        <button class="btn" type="button" id="btn-encriptar">Encriptar!</button>
-        <button class="btn" type="button" id="btn-desencriptar">Desencriptar!</button>
-      </form>
-    </section>
-  
-    <section class="msg box">
-      <h2>Mensaje Encriptado:</h2>
-      <textarea class="text-input-salida" id="msg" readonly></textarea>
-      <button class="btn" type="button" id="btn-copy">Copiar</button>
-    </section>
-  </main>
-
-  <script src="script.js"></script>
+    <script>
+        function mostrarBoton() {
+            // Obtiene el botón oculto por su id
+            var botonOculto = document.getElementById('boton_oculto');
+            // Cambia el estilo del botón para hacerlo visible
+            botonOculto.style.display = 'inline-block';
+        }
+        
+        function funcion3() {
+            // Aquí puedes poner la funcionalidad de tu botón oculto
+            alert('¡Botón oculto presionado!');
+        }
+    </script>
 </body>
 </html>

@@ -1,40 +1,33 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es-mx">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href= "./styles/style.css">
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
+    
+  <h1 class="titulo">Código Secreto</h1>
 
-    <main class="contenedor"> <!--presentacion -->
+  <main class="main">
+    <section class="form box">
+      <form action="" onsubmit="return false;">
+        <label for="input-texto">Solo letras minúsculas, sin acento</label>
+        <textarea class="text-input" name="input-texto" id="input-texto" placeholder="Ingrese el texto aquí"></textarea>
+        <button class="btn" type="button" id="btn-encriptar">Encriptar!</button>
+        <button class="btn" type="button" id="btn-desencriptar">Desencriptar!</button>
+      </form>
+    </section>
+  
+    <section class="msg box">
+      <h2>Mensaje Encriptado:</h2>
+      <textarea class="text-input-salida" id="msg" readonly></textarea>
+      <button class="btn" type="button" id="btn-copy">Copiar</button>
+    </section>
+  </main>
 
-        <section class="contenedero_sec1"> <!--presentacion__contenido-->
-
-            <p class="texto"> <!--presentacion__contenido__titulo -->
-                Ingrese el texto aqui </p>
-
-            <div class="presentacion__enlaces">
-                <p class="presentacion__enlaces__subtitulo">Solo letras minusculas y sin acentos:</p>
-                <div class="botones">
-                    <button class="presentacion__enlaces__link" href="https://www.instagram.com/">
-                    Encriptar</button>
-                    <button class="presentacion__enlaces__link" href="https://github.com/">
-                    Desencriptar</button>
-                </div>
-            </div>
-
-        </section>
-
-        <section class="contenedero_sec2"> <!--encriptado-->
-            <img class="presentacion__imagen" src="./assets/secret.jpg" alt="Foto de ejemplo"> 
-            <p>Ingrese el texto aqui </p>
-            <p>Ingrese el texto aqui </p>
-
-        </section>
-
-    </main>
-
+  <script src="script.js"></script>
 </body>
 </html>

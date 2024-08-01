@@ -13,10 +13,11 @@
 *{
 	padding: 0;
 	margin: 0;
+	background-color: var(--color--primario);
 }
 
 body{
-    background-color: var(--color--primario);
+    
 	color: var(--color--secundario);
 	box-sizing: border-box;
 }
